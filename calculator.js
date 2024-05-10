@@ -1,6 +1,6 @@
 const prompt=require('prompt-sync')();
 while(1){
-    console.log('1.Addition\n2.Substraction\n3.Multiplication\n4.Division\n5.exit')
+    console.log('\n1.Addition\n2.Substraction\n3.Multiplication\n4.Division\n5.exit')
     let  choice =prompt('Enter your Choice:')
     if (choice==1){
         let a=prompt('enter First Number:')
@@ -8,7 +8,7 @@ while(1){
         let b=prompt('enter Second Number:')
         b=parseInt(b)
         let x=addition(a,b)
-        console.log(x)
+        console.log('\naddition of two numbers '+a+' and '+b+' is '+x)
     }
     else if (choice==2){
         let a=prompt('enter First Number:')
@@ -16,7 +16,7 @@ while(1){
         let b=prompt('enter Second Number:')
         b=parseInt(b)
       let x=  substraction(a,b)
-        console.log(x)
+        console.log('\nsubstraction of two numbers '+a+' and '+b+' is '+x)
 
     }
     else if (choice==3){
@@ -25,7 +25,7 @@ while(1){
         let b=prompt('enter Second Number:')
         b=parseInt(b)
       let  x= multiplication(a,b)
-        console.log(x)
+        console.log('\nmultiplication of two numbers '+a+' and '+b+' is '+x)
 
     }
     else if (choice==4){
@@ -34,7 +34,7 @@ while(1){
         let b=prompt('enter Second Number:')
         b=parseInt(b)
       let x= division(a,b)
-        console.log(x)
+        console.log('\nDivision of two numbers '+a+' and '+b+' is '+x)
 
     }
     else
@@ -53,3 +53,4 @@ while(1){
     }
 
 }
+
